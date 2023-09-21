@@ -1,0 +1,19 @@
+html {
+  text-rendering: optimizeLegibility;
+  font-size: 62.5%;
+}
+body {
+  font-family: $main-font;
+  font-size: 1.6rem;
+}
+.section-heading {
+  color: $text-color;
+  font-family: $second-font;
+}
+.section-desc {
+  color: $text-normal-3;
+  font-style: normal;
+}
+.section-box {
+  text-align: center;
+}

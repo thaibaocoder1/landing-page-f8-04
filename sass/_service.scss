@@ -1,0 +1,94 @@
+.service {
+  padding-top: 68px;
+  padding-bottom: 10rem;
+  background: #fff6ed;
+  &__heading {
+    margin-inline: auto;
+  }
+  &__content {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 7.1rem;
+  }
+  &__box {
+    width: 294px;
+    padding: 3rem 2.8rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    background: #fff;
+    &:not(:last-child) {
+      margin-bottom: 2.4rem;
+    }
+  }
+  &__title {
+    color: $text-color;
+    font-family: $second-font;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    margin-left: 6px;
+    padding-left: 6px;
+    position: relative;
+    &::before {
+      content: "";
+      height: 100%;
+      width: 2px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, #ff5b2e 0.39%, #ffa187 100.29%);
+      position: absolute;
+      left: -6px;
+    }
+  }
+  &__desc {
+    color: $text-normal-3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+    max-width: 244px;
+    margin-top: 1.8rem;
+    margin-bottom: 2.4rem;
+  }
+  &__view {
+    color: #34396a;
+    font-family: $second-font;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    gap: 0 6px;
+  }
+  &__thumb {
+    width: 447px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 4.5rem;
+    &::after {
+      content: "";
+      width: 410px;
+      height: 350px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+      position: absolute;
+      bottom: 0;
+      left: 18px;
+      z-index: 1;
+    }
+    > * {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &__button {
+    width: 214px;
+    height: 56px;
+    line-height: 56px;
+  }
+}

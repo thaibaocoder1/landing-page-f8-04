@@ -1,0 +1,186 @@
+.hero {
+  background-color: $bg-color;
+  padding-top: 9rem;
+  &__body {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  &__content-heading {
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 1.15;
+    max-width: 517px;
+    margin-bottom: 2.4rem;
+  }
+  &__content-desc {
+    color: $text-normal-3;
+    font-size: 1.6rem;
+    max-width: 391px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875;
+    margin-bottom: 3.8rem;
+  }
+  .buttons-action {
+    display: flex;
+    align-items: center;
+    gap: 0 1.5rem;
+    &__wrap {
+      .btn--hero {
+        color: #fff;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 600;
+        width: 189px;
+        height: 6rem;
+        line-height: 6rem;
+        border-radius: 31px;
+        background-color: $hover-color;
+        box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.63rem;
+      }
+      .circle-arrow {
+        width: 2rem;
+        height: 2rem;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-left: 1rem;
+        i {
+          font-size: 1rem;
+          color: $hover-color;
+          border-radius: 1rem;
+        }
+      }
+    }
+    &__call {
+      color: $text-color;
+      text-align: center;
+      text-decoration-line: underline;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1;
+    }
+  }
+  &__images {
+    position: relative;
+  }
+  &__images-cat {
+    width: 388px;
+    height: 488px;
+    border-radius: 1.6rem;
+    border: 3px solid #fff;
+    background: linear-gradient(180deg, #ffa78d 0%, #ff8c60 100%);
+    box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+    position: relative;
+    z-index: 2;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__images-dog {
+    width: 186px;
+    height: 244px;
+    border-radius: 1.6rem;
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    background: linear-gradient(220deg, #faa7ad 0%, #e87f8a 100%);
+    box-shadow: 8px 18px 36px -6px rgba(234, 148, 157, 0.17);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    translate: 90% 20%;
+    z-index: 2;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom;
+      display: block;
+    }
+  }
+  &__sticky {
+    background-color: #fff;
+    width: 250px;
+    border-radius: 1rem;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+    padding: 1.8rem 1.4rem;
+    position: absolute;
+    left: 62%;
+    top: 60%;
+    z-index: 2;
+    translate: -50% 100%;
+  }
+  &__box {
+    display: flex;
+    gap: 0 1rem;
+    &:first-child {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #f2f2f2;
+    }
+  }
+  &__union {
+    &-bottom {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      translate: -30% -20%;
+    }
+    &-top {
+      position: absolute;
+      top: 0;
+      right: 0;
+      translate: 100%;
+    }
+  }
+  &__image {
+    background-color: #fec23f;
+    border-radius: 0.625rem;
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    &--second {
+      background-color: #c6e2fa;
+    }
+    &:hover .hero__thumb {
+      scale: 1.1;
+    }
+  }
+  &__thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  &__box-content__heading {
+    color: #181e52;
+    font-family: $second-font;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .separate {
+    border-radius: 0.625rem;
+    opacity: 0.07999999821186066;
+    background: $text-color;
+    &--one {
+      width: 118px;
+      height: 4px;
+      margin: 7px 0 6px 0;
+    }
+    &--two {
+      width: 39px;
+      height: 4px;
+    }
+  }
+}
